@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=marathon-training'
+      - 'POSTGRES_PASSWORD=password'
+      - 'POSTGRES_USER=finn'
+    ports:
+      - '5432:5432'
